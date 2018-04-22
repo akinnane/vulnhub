@@ -1,0 +1,4 @@
+# Nmap 7.60 scan initiated Thu Apr 12 00:06:28 2018 as: nmap -T5 -A -p1-65535 -oG nmap_grepable.txt -oN nmap_normal.txt 192.168.122.238
+Host: 192.168.122.238 ()	Status: Up
+Host: 192.168.122.238 ()	Ports: 22/open/tcp//ssh//OpenSSH 2.9p2 (protocol 1.99)/, 80/open/tcp//http//Apache httpd 1.3.20 ((Unix)  (Red-Hat|Linux) mod_ssl|2.8.4 OpenSSL|0.9.6b)/, 111/open/tcp//rpcbind//2 (RPC #100000)/, 139/open/tcp//netbios-ssn//Samba smbd (workgroup: MYGROUP)/, 443/open/tcp//ssl|http//Apache httpd 1.3.20 ((Unix)  (Red-Hat|Linux) mod_ssl|2.8.4 OpenSSL|0.9.6b)/, 32768/open/tcp//status//1 (RPC #100024)/	Ignored State: closed (65529)	OS: Linux 2.4.9 - 2.4.18 (likely embedded)	Seq Index: 198	IP ID Seq: All zeros
+# Nmap done at Thu Apr 12 00:14:06 2018 -- 1 IP address (1 host up) scanned in 458.11 seconds

