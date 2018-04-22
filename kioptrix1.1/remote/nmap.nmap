@@ -1,0 +1,61 @@
+# Nmap 7.60 scan initiated Sun Apr 22 11:47:19 2018 as: nmap -A -T5 -oA nmap 192.168.122.61
+Warning: 192.168.122.61 giving up on port because retransmission cap hit (2).
+Nmap scan report for 192.168.122.61
+Host is up (0.00037s latency).
+Not shown: 994 closed ports
+PORT     STATE SERVICE  VERSION
+22/tcp   open  ssh      OpenSSH 3.9p1 (protocol 1.99)
+| ssh-hostkey: 
+|   1024 8f:3e:8b:1e:58:63:fe:cf:27:a3:18:09:3b:52:cf:72 (RSA1)
+|   1024 34:6b:45:3d:ba:ce:ca:b2:53:55:ef:1e:43:70:38:36 (DSA)
+|_  1024 68:4d:8c:bb:b6:5a:bd:79:71:b8:71:47:ea:00:42:61 (RSA)
+|_sshv1: Server supports SSHv1
+80/tcp   open  http     Apache httpd 2.0.52 ((CentOS))
+|_http-server-header: Apache/2.0.52 (CentOS)
+|_http-title: Site doesn't have a title (text/html; charset=UTF-8).
+111/tcp  open  rpcbind  2 (RPC #100000)
+| rpcinfo: 
+|   program version   port/proto  service
+|   100000  2            111/tcp  rpcbind
+|   100000  2            111/udp  rpcbind
+|   100024  1            869/udp  status
+|_  100024  1            872/tcp  status
+443/tcp  open  ssl/http Apache httpd 2.0.52 ((CentOS))
+|_http-server-header: Apache/2.0.52 (CentOS)
+|_http-title: Site doesn't have a title (text/html; charset=UTF-8).
+| ssl-cert: Subject: commonName=localhost.localdomain/organizationName=SomeOrganization/stateOrProvinceName=SomeState/countryName=--
+| Not valid before: 2009-10-08T00:10:47
+|_Not valid after:  2010-10-08T00:10:47
+|_ssl-date: 2018-04-22T14:47:38+00:00; +4h00m00s from scanner time.
+| sslv2: 
+|   SSLv2 supported
+|   ciphers: 
+|     SSL2_RC4_128_WITH_MD5
+|     SSL2_DES_64_CBC_WITH_MD5
+|     SSL2_DES_192_EDE3_CBC_WITH_MD5
+|     SSL2_RC4_64_WITH_MD5
+|     SSL2_RC2_128_CBC_WITH_MD5
+|     SSL2_RC2_128_CBC_EXPORT40_WITH_MD5
+|_    SSL2_RC4_128_EXPORT40_WITH_MD5
+631/tcp  open  ipp      CUPS 1.1
+| http-methods: 
+|_  Potentially risky methods: PUT
+|_http-server-header: CUPS/1.1
+|_http-title: 403 Forbidden
+3306/tcp open  mysql    MySQL (unauthorized)
+MAC Address: 52:54:00:A3:1D:2E (QEMU virtual NIC)
+Device type: general purpose|media device
+Running: Linux 2.6.X, Star Track embedded
+OS CPE: cpe:/o:linux:linux_kernel:2.6 cpe:/o:linux:linux_kernel:2.6.23 cpe:/h:star_track:srt2014hd
+OS details: Linux 2.6.9 - 2.6.30, Star Track SRT2014HD satellite receiver (Linux 2.6.23)
+Network Distance: 1 hop
+
+Host script results:
+|_clock-skew: mean: 3h59m59s, deviation: 0s, median: 3h59m59s
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   0.37 ms 192.168.122.61
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Apr 22 11:47:38 2018 -- 1 IP address (1 host up) scanned in 19.26 seconds

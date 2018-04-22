@@ -1,0 +1,4 @@
+# Nmap 7.60 scan initiated Sun Apr 22 11:47:19 2018 as: nmap -A -T5 -oA nmap 192.168.122.61
+Host: 192.168.122.61 ()	Status: Up
+Host: 192.168.122.61 ()	Ports: 22/open/tcp//ssh//OpenSSH 3.9p1 (protocol 1.99)/, 80/open/tcp//http//Apache httpd 2.0.52 ((CentOS))/, 111/open/tcp//rpcbind//2 (RPC #100000)/, 443/open/tcp//ssl|http//Apache httpd 2.0.52 ((CentOS))/, 631/open/tcp//ipp//CUPS 1.1/, 3306/open/tcp//mysql//MySQL (unauthorized)/	Ignored State: closed (994)	OS: Linux 2.6.9 - 2.6.30|Star Track SRT2014HD satellite receiver (Linux 2.6.23)	Seq Index: 201	IP ID Seq: All zeros
+# Nmap done at Sun Apr 22 11:47:38 2018 -- 1 IP address (1 host up) scanned in 19.26 seconds
