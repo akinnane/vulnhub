@@ -1,6 +1,8 @@
 # Kioptrix 1.1
 
 ## Remote
+
+```
 PORT     STATE SERVICE  VERSION
 22/tcp   open  ssh      OpenSSH 3.9p1 (protocol 1.99)
 | ssh-hostkey:
@@ -41,7 +43,7 @@ PORT     STATE SERVICE  VERSION
 |_http-server-header: CUPS/1.1
 |_http-title: 403 Forbidden
 3306/tcp open  mysql    MySQL (unauthorized)
-
+```
 
 ### Apache 2.0.52
 
@@ -121,12 +123,14 @@ This would be possible to do this using sqlmap.
 
 This returns this dump of the database.
 
+```
 +----+----------+------------+
 | id | username | password   |
 +----+----------+------------+
 | 1  | admin    | 5afac8d85f |
 | 2  | john     | 66lajGGbla |
 +----+----------+------------+
+```
 
 I can use the same command injection to get a reverse shell.
 
